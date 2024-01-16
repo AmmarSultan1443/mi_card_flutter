@@ -28,6 +28,14 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Pacifico'
+                ),),
+                Text('INTERN AT AL MISBAH INFORMATIQUE',
+                style: TextStyle(
+                  fontFamily: 'Source Sans 3',
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 17.0,
+                  letterSpacing: 2.5,
                 ),)
               ],
             )
