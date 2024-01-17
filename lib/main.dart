@@ -37,54 +37,45 @@ class MyApp extends StatelessWidget {
                   fontSize: 17.0,
                   letterSpacing: 2.5,
                 ),),
-                Container(
+                Card(
                   color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: [
+                  child: ListTile(
+                    leading:
                       Icon(
                         Icons.phone,
                       color: Colors.teal,
                       ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text('+212 688 732 516',
+
+                      title: Text('+212 688 732 516',
                       style: TextStyle(
                         fontFamily: 'Source Sans 3',
                         color: Colors.teal,
                         fontWeight: FontWeight.bold,
                         fontSize: 15.0,
-                      ),)
-                    ],
-                  )
+                      ),
+                      ),
+                  ),
                 ),
-                Container(
+                Card(
                     color: Colors.white,
                     margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                    padding: EdgeInsets.all(10.0),
-                    child: Row(
-                      children: [
-                        Icon(
+                    child: ListTile(
+                        leading: Icon(
                           Icons.email,
                           color: Colors.teal,
                         ),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        Text('ammarsultan1445@gmail.com',
+                        title: Text('ammarsultan1445@gmail.com',
                           style: TextStyle(
                               fontFamily: 'Source Sans 3',
                               color: Colors.teal,
                               fontWeight: FontWeight.bold,
                               fontSize: 15.0
-                          ),)
-                      ],
-                    )
-                )
+                          ),),
+                    ),
+                ),
               ],
-            )
+            ),
         ),
       ),
     );
