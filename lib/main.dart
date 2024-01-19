@@ -15,6 +15,14 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Container(
+                    padding: EdgeInsets.all(20.0),
+                    color: Colors.white,
+                    child: Image.asset('images/logoAIM.png'),
+                  ),
+                ),
                 CircleAvatar(
                 radius: 50.0,
                   backgroundImage: AssetImage('images/86552AC4-1AAD-4EBD-AD80-EDB610BD6186_1_102_a.jpeg'),
