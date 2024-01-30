@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,8 +6,14 @@ void main() {
   );
 }
 class MyApp extends StatelessWidget {
+
+  void playSound() {
+    final player = AudioPlayer();
+    player.play(AssetSource('719497__audiocoffee__summer-every-day-short-ver.wav'));
+  }
   @override
   Widget build(BuildContext context) {
+    playSound();
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
@@ -17,11 +24,15 @@ class MyApp extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(20.0),
-                  child: Container(
-                    padding: EdgeInsets.all(20.0),
-                    color: Colors.white,
-                    child: Image.asset('images/logoAIM.png'),
+                  child: Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Image.asset('images/logoAIM.png'),
+                    ),
                   ),
+                ),
+                SizedBox(
+                  height: 120.0,
                 ),
                 CircleAvatar(
                 radius: 50.0,
